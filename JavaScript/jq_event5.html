@@ -16,6 +16,12 @@
       $(".btn3").on("click", function(e){
         $(".txt3").css({"background-color":"#0f0"});
       });
+      $("#box_1").on("mouseout", function(){
+        $("#box_1").css({"background-color":"yellow"});
+      });
+      $("#box_2").on("mouseleave", function(){
+        $("#box_2").css({"background-color":"pink"});
+      });
     });
   </script>
   </head>
@@ -30,5 +36,17 @@
     <p><a href="http://www.easyspub.co.kr/" class="btn3">버튼3</a>
     </p>
     <p class="txt3">내용3</p>
+    <h1>mouseout</h1>
+    <div id="box_1">
+      <p><a href="#">내용1</a></p>
+      <p><a href="#">내용2</a></p>
+      <p><a href="#">내용3</a></p>
+    </div>
+    <h1>mouseleave</h1>
+    <div id="box_2">
+      <p><a href="#">내용4</a></p>
+      <p><a href="#">내용5</a></p>
+      <p><a href="#">내용6</a></p>
+    </div>
   </body>
 </html>
