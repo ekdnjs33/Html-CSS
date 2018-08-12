@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>dynamic</title>
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function(){
+      $(".btn1.on").on("click", function(){
+        alert("Hello");
+      });
+      // 이벤트 대상 요소를 생성하지도 않고 먼저 쓴 경우, 작동 안함
+      $(".btn1").addClass("on"); // 나중에 생성
+
+      $(document).on("click", ".btn2.on", function(){
+        alert("Welcome");
+      });
+      // 이벤트 대상 요소를 미리 생성하지 않고도 작동
+      $(".btn2").addClass("on"); // 나중에 생성
+    });
+    </script>
+  </head>
+  <body>
+    <div id="Wrpa">
+      <p><button class="btn1">버튼1</button></p>
+      <p><button class="btn2">버튼2</button></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login test</title>
+    <script src="jquery.js"></script>
+    <script src="login_test.js"></script>
+  </head>
+  <body>
+    <div class="login_wrap">
+      <h1>로그인</h2>
+        <form class="login_f" method='post' action='login_test.php'>
+          <p>
+            <label for="user_id">아이디</label>
+            <input type="text" name="user_id" id="user_id" value="korean"/>
+          </p>
+          <p>
+            <label for="user_pw">비밀번호</label>
+            <input type="password" name="user_pw" id="user_pw" value="12345"/>
+          </p>
+          <p><input type="submit" value="로그인" class="login_btn"/></p>
+        </form>
+      </div>
+  </body>
+</html>
